@@ -1,0 +1,153 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  min-height: 100%;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header{
+ display: grid;
+ grid-template-columns: 100%;
+ min-width:100vh;
+ background-color:#545548;
+ color:#FAE8D7;
+ width: 100%;
+}
+
+ .box-card{
+  padding:0.5rem;
+  margin:1rem;
+  box-shadow: 0 0 0.3rem rgb(182, 189, 173) inset;
+}
+
+.container{
+  display:grid;
+  grid-template-columns:70% 30%;
+  grid-gap:10px 10px;
+  
+}
+
+.producto{
+  display:grid;
+  min-height:100vh;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  grid-template-rows:masonry;  /*solo para compatibilidad con Firefox, acomoda altura*/
+  grid-gap:0px 0px;
+}
+
+.carrito{
+  width: 30%;
+  height: auto;
+  font-size: 12px;
+}
+
+.box-carrito{
+  padding:0.5rem;
+  margin:1rem;
+  background-color: rgba(245, 245, 245, 0.863);
+  box-shadow: 0 0 0.3rem rgb(182, 189, 173) ;
+}
+
+.listar-carrito{
+  width: 97.5%;
+  margin: auto;
+  margin-top:5px;
+  margin-bottom:5px;
+  background-color: whitesmoke;
+}
+
+.titulo-carrito {
+  font-size: 16px;
+  color:#545548;
+}
+
+.thead-carrito{
+  font-size: 10px;
+  color:#545548;
+}
+
+.boton{
+  margin-left: 25px;
+}
+
+.botonAgregar{
+  background-color:#545548;
+  border-radius:5px;
+  border:1px solid #545548;
+  box-shadow: 0 0 0.3rem gray ;
+  padding: 3px;
+  font-size: 11px;
+}
+
+.botonQuitarLimpiar , .botonPagar{
+  margin-top: 10px;
+  height: 3%;
+  color:red;
+  border-radius:5px;
+  border:1px solid red;
+  box-shadow: 0 0 0.3rem gray ;
+  padding: 3px;
+  font-size: 11px;
+}
+
+.botonPagar{
+  color: green;
+  border:1px solid green;
+  margin-right:50px;
+}
+
+.botonIzquierda{
+  margin-left: 210px;
+  margin-top: 15px;
+  border-color: red;
+  border-radius: 5px;
+  padding:5px;
+}
+
+.derecha{
+  width: 22%;
+  font-size: 13px;
+ 
+}
+
+.izquierda{
+  text-align: left;
+  width: 30%;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.centro{
+  padding-left: 20px;
+  width: 70%;
+}
+
+.foto{
+  height: 55%;
+}
+
+.mayuscula{
+  text-transform:uppercase;
+}
+
+@media  (max-width: 990px){
+
+  .container{
+    display:flex;
+  }
+  
+};
+
+
